@@ -229,6 +229,28 @@
       margin-bottom: 1.6rem;
     }
     .eq-mark { color: var(--accent); font-weight: 500; }
+    /* PATENTS */
+    .patent-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 1rem;
+      margin-bottom: 1.6rem;
+      align-items: start;
+    }
+    .patent-status {
+      font-size: 12px;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+      border: 1px solid #b8cdd8;
+      border-radius: 2px;
+      padding: 3px 0;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .patent-body .patent-title { font-size: 14.5px; font-weight: 500; margin-bottom: 3px; line-height: 1.5; }
+    .patent-body .patent-inventors { font-size: 13px; color: var(--fg2); margin-bottom: 3px; }
+    .patent-body .patent-inventors strong { font-weight: 500; color: var(--fg); }
+    .patent-body .patent-meta { font-size: 13px; font-style: italic; color: var(--fg3); }
 
     /* AWARDS */
     .award-item {
@@ -269,6 +291,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#publications">Publications</a></li>
+    <li><a href="#patents">Patents</a></li>
     <li><a href="#awards">Awards</a></li>
     <!-- <li><a href="files/CV_YunheumLee.pdf">CV</a></li> -->
   </ul>
@@ -458,23 +481,45 @@
     <p class="pub-eq-note"><span class="eq-mark">*</span> Equal contribution</p>
   </section>
 
+  <!-- PATENTS -->
+  <section id="patents">
+    <h2>Patents</h2>
+
+    <div class="patent-item">
+      <div class="patent-status">공개</div>
+      <div class="patent-body">
+        <p class="patent-title">온도센서용 섬유, 그것을 포함하는 온도센서 및 온도센서용 섬유 제조 방법</p>
+        <p class="patent-inventors">이강선, 전홍찬, 조현대, 송경화, <strong>이윤흠</strong>, 손연주, 류우미, 박성준</p>
+        <p class="patent-meta">대한민국 공개특허 10-2024-0112051 (출원번호 10-2023-0004155, 2023)</p>
+      </div>
+    </div>
+  </section>
+
   <!-- AWARDS -->
   <section id="awards">
     <h2>Honors &amp; Awards</h2>
 
     <div class="award-item">
-      <div class="award-year">2024</div>
+      <div class="award-year">2025</div>
       <div class="award-body">
-        <strong>수상 이름</strong><br>
-        <span>수여 기관 / 학회</span>
+        <strong>Bronze Prize, 31st HumanTech Paper Award</strong><br>
+        <span>Samsung Electronics</span>
       </div>
     </div>
 
     <div class="award-item">
-      <div class="award-year">2023</div>
+      <div class="award-year">2024</div>
       <div class="award-body">
-        <strong>수상 이름</strong><br>
-        <span>수여 기관 / 학회</span>
+        <strong>Excellent Presentation Award</strong><br>
+        <span>The Polymer Society of Korea, Fall Meeting</span>
+      </div>
+    </div>
+
+    <div class="award-item">
+      <div class="award-year">2021</div>
+      <div class="award-body">
+        <strong>Magna Cum Laude</strong><br>
+        <span>Sungkyunkwan University (SKKU)</span>
       </div>
     </div>
   </section>
