@@ -255,7 +255,7 @@
     /* RESEARCH INTERESTS */
     .ri-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1rem;
     }
     .ri-card {
@@ -271,6 +271,23 @@
       color: var(--accent);
     }
     .ri-card p { font-size: 13.5px; color: var(--fg2); line-height: 1.65; }
+    .ri-intro {
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: var(--fg);
+      margin-bottom: 1.6rem;
+      max-width: 680px;
+    }
+    .ri-num {
+      font-family: 'EB Garamond', serif;
+      font-size: 13px;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .ri-card.placeholder { border-style: dashed; }
+    .ri-card.placeholder h3, .ri-card.placeholder p { color: var(--fg3); }
     /* SKILLS */
     .skill-group { margin-bottom: 1.1rem; }
     .skill-group h3 {
@@ -414,18 +431,46 @@
   <!-- RESEARCH INTERESTS -->
   <section id="research">
     <h2>Research Interests</h2>
+    <p class="ri-intro">
+      My doctoral research has aimed to make imperceptible, fiber-based biomechanical electronics
+      practical for real-world use by addressing three key challenges.
+    </p>
     <div class="ri-grid">
       <div class="ri-card">
-        <h3>Smart Textiles &amp; Fiber Electronics</h3>
-        <p>Multifunctional fibers fabricated by thermal drawing processes for wearable sensing and textile-integrated electronics.</p>
+        <span class="ri-num">CHALLENGE 01</span>
+        <h3>Advancing Fiber Fabrication Processes</h3>
+        <p>
+          The first challenge lies in the limited fabrication strategies available for functional fibers.
+          To address this, I focused on advancing the thermal drawing process (TDP). I established
+          rheological criteria for the drawability of nanocomposites, and by tuning composite rheology
+          through metal–ligand engineering, I enabled the thermal drawing of liquid metal particle (LMP)
+          composites that had previously been considered infeasible.
+        </p>
       </div>
       <div class="ri-card">
-        <h3>Soft Functional Composites</h3>
-        <p>Liquid metal particle (LMP) and nanocomposite-based materials for stretchable, tough, and conductive electrodes.</p>
+        <span class="ri-num">CHALLENGE 02</span>
+        <h3>Robust Fiber–Module Interconnection</h3>
+        <p>
+          The second challenge addresses device failure, which most frequently occurs at the
+          interconnection between the fiber and the back-end processing module. I tackled this through
+          two material strategies. First, I employed liquid metal particles (LMPs) to render the
+          interconnect highly strain-insensitive, preventing signal distortion on the way to the module.
+          Second, I developed a hybrid metal composite of LMPs and Field's metal particles (FMPs) that
+          integrates strong adhesion, electrical connection, strain-invariant conductivity, and leakage
+          prevention into a single material—covering all the functions required of a bioelectrode.
+        </p>
       </div>
       <div class="ri-card">
-        <h3>Wearable Bioelectronics</h3>
-        <p>Body-interfacing devices and neural probes for continuous health monitoring and human-machine interaction.</p>
+        <span class="ri-num">CHALLENGE 03</span>
+        <h3>System-Level Fiber Interfaces</h3>
+        <p>
+          The third challenge explores how fiber devices can be deployed at the system level. I developed
+          a range of fiber sensing devices (e.g., temperature and strain sensors), and designed them with
+          machine intelligence in mind—optimizing device characteristics so that simpler sensing setups
+          could achieve higher accuracy, while improving generalization across diverse users. Building on
+          these devices, I developed a textile interface capable of performing a variety of tasks at the
+          system level.
+        </p>
       </div>
     </div>
   </section>
