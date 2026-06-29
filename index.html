@@ -158,21 +158,22 @@
     /* PUBLICATIONS */
     .pub-item {
       display: grid;
-      grid-template-columns: 120px 1fr;
+      grid-template-columns: 150px 1fr;
       gap: 1rem;
       margin-bottom: 1.6rem;
       align-items: start;
     }
     .pub-fig {
-      width: 120px;
-      height: 80px;
+      width: 150px;
       background: #e8e5e0;
       border-radius: 3px;
       overflow: hidden;
       flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    }
+    .pub-fig img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
     .pub-fig-placeholder {
       width: 100%;
@@ -327,7 +328,7 @@
       .hero { grid-template-columns: 1fr; }
       .hero .photo-wrap { width: 110px; height: 110px; }
       .pub-item { grid-template-columns: 1fr; }
-      .pub-fig { width: 100%; height: 100px; }
+      .pub-fig { width: 100%; max-width: 280px; }
       nav ul { gap: 1rem; }
     }
   </style>
@@ -438,7 +439,7 @@
     <p class="pub-year-group">2021</p>
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="jmcc2021.png" alt="Crack-based pressure sensor on anisotropic Poisson's ratio substrate" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="jmcc2021.png" alt="Crack-based pressure sensor on anisotropic Poisson's ratio substrate" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Deterministically assigned directional sensing of a nanoscale crack based pressure sensor by anisotropic Poisson ratios of the substrate</p>
@@ -452,7 +453,7 @@
 
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="acsnano2021.png" alt="Noninterference wearable strain sensor" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="acsnano2021.png" alt="Noninterference wearable strain sensor" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Noninterference Wearable Strain Sensor: Near-Zero Temperature Coefficient of Resistance Nanoparticle Arrays with Thermal Expansion and Transport Engineering</p>
@@ -468,7 +469,7 @@
     <p class="pub-year-group">2023</p>
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="afm2023.png" alt="Thermally drawn multi-material fibers for temperature sensing" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="afm2023.png" alt="Thermally drawn multi-material fibers for temperature sensing" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Thermally Drawn Multi-material Fibers Based on Polymer Nanocomposite for Continuous Temperature Sensing</p>
@@ -482,7 +483,7 @@
 
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="polysci2023.png" alt="열 인발 공정 기반 섬유형 센서" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="polysci2023.png" alt="열 인발 공정 기반 섬유형 센서" />
       </div>
       <div class="pub-body">
         <p class="pub-title">웨어러블 소자 적용을 위한 열 인발 공정 기반 섬유형 센서 연구 동향</p>
@@ -498,7 +499,7 @@
     <p class="pub-year-group">2024</p>
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="acsnano2024.png" alt="Multifunctional flexible neural probe" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="acsnano2024.png" alt="Multifunctional flexible neural probe" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Multifunctional and Flexible Neural Probe with Thermally Drawn Fibers for Bidirectional Synaptic Probing in the Brain</p>
@@ -512,7 +513,7 @@
 
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="adma2024.png" alt="Structurally aligned multifunctional neural probe (SAMP)" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="adma2024.png" alt="Structurally aligned multifunctional neural probe (SAMP)" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Structurally Aligned Multifunctional Neural Probe (SAMP) Using Forest-Drawn CNT Sheet onto Thermally Drawn Polymer Fiber for Long-Term In Vivo Operation</p>
@@ -528,7 +529,7 @@
     <p class="pub-year-group">2025</p>
     <div class="pub-item">
       <div class="pub-fig">
-        <img src="natcomm2025.png" alt="Meter-scale heterostructure printing for fiber electrodes" style="width:100%;height:100%;object-fit:cover;" />
+        <img src="natcomm2025.png" alt="Meter-scale heterostructure printing for fiber electrodes" />
       </div>
       <div class="pub-body">
         <p class="pub-title">Meter-scale heterostructure printing for high-toughness fiber electrodes in intelligent digital apparel</p>
