@@ -251,6 +251,55 @@
     .patent-body .patent-inventors { font-size: 13px; color: var(--fg2); margin-bottom: 3px; }
     .patent-body .patent-inventors strong { font-weight: 500; color: var(--fg); }
     .patent-body .patent-meta { font-size: 13px; font-style: italic; color: var(--fg3); }
+    /* RESEARCH INTERESTS */
+    .ri-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .ri-card {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.1rem 1.2rem;
+      background: #fff;
+    }
+    .ri-card h3 {
+      font-size: 14.5px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .ri-card p { font-size: 13.5px; color: var(--fg2); line-height: 1.65; }
+    /* SKILLS */
+    .skill-group { margin-bottom: 1.1rem; }
+    .skill-group h3 {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--fg);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      font-size: 12.5px;
+      color: var(--fg2);
+      background: #f0ede8;
+      border-radius: 3px;
+      padding: 4px 11px;
+    }
+    /* MEDIA */
+    .media-item {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 0 1.5rem;
+      margin-bottom: 1rem;
+      align-items: start;
+    }
+    .media-date { font-size: 13px; color: var(--fg3); padding-top: 1px; }
+    .media-body .media-title { font-size: 14px; font-weight: 500; margin-bottom: 2px; line-height: 1.45; }
+    .media-body .media-outlet { font-size: 13px; color: var(--fg2); }
+    .media-body a { color: var(--link); text-decoration: none; }
+    .media-body a:hover { text-decoration: underline; }
 
     /* AWARDS */
     .award-item {
@@ -290,9 +339,11 @@
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
+    <li><a href="#research">Research</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#patents">Patents</a></li>
     <li><a href="#awards">Awards</a></li>
+    <li><a href="#media">Media</a></li>
     <!-- <li><a href="files/CV_YunheumLee.pdf">CV</a></li> -->
   </ul>
 </nav>
@@ -353,6 +404,25 @@
       <div class="edu-body">
         <h3>B.S. in Biomedical Engineering</h3>
         <p>Sungkyunkwan University (SKKU), Suwon, Korea</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH INTERESTS -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <div class="ri-grid">
+      <div class="ri-card">
+        <h3>Smart Textiles &amp; Fiber Electronics</h3>
+        <p>Multifunctional fibers fabricated by thermal drawing processes for wearable sensing and textile-integrated electronics.</p>
+      </div>
+      <div class="ri-card">
+        <h3>Soft Functional Composites</h3>
+        <p>Liquid metal particle (LMP) and nanocomposite-based materials for stretchable, tough, and conductive electrodes.</p>
+      </div>
+      <div class="ri-card">
+        <h3>Wearable Bioelectronics</h3>
+        <p>Body-interfacing devices and neural probes for continuous health monitoring and human-machine interaction.</p>
       </div>
     </div>
   </section>
@@ -520,6 +590,79 @@
       <div class="award-body">
         <strong>Magna Cum Laude</strong><br>
         <span>Sungkyunkwan University (SKKU)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills &amp; Techniques</h2>
+
+    <div class="skill-group">
+      <h3>Fabrication</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Thermal Drawing Process (TDP)</span>
+        <span class="skill-tag">Fiber/Preform Engineering</span>
+        <span class="skill-tag">Polymer Nanocomposite Processing</span>
+        <span class="skill-tag">Liquid Metal Particle (LMP) Synthesis</span>
+        <span class="skill-tag">Solution Casting</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Characterization</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">SEM</span>
+        <span class="skill-tag">Electrical/Mechanical Testing</span>
+        <span class="skill-tag">Rheology</span>
+        <span class="skill-tag">Resistance/TCR Measurement</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Computational &amp; Software</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Data Analysis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA COVERAGE -->
+  <section id="media">
+    <h2>Media Coverage</h2>
+
+    <div class="media-item">
+      <div class="media-date">2025</div>
+      <div class="media-body">
+        <p class="media-title"><a href="https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=43990" target="_blank">50미터급 신축성 액체금속 전자섬유 개발, 실용 스마트 의류로 구현</a></p>
+        <p class="media-outlet">KAIST 보도자료 · <a href="https://m.search.naver.com/search.naver?where=m_news&sm=mtb_tnw&query=kaist&docid=4210007500445" target="_blank">언론 보도</a> · <a href="https://search.naver.com/search.naver?where=nexearch&query=50%EB%AF%B8%ED%84%B0%EA%B8%89+%EC%8B%A0%EC%B6%95%EC%84%B1+%EC%95%A1%EC%B2%B4%EA%B8%88%EC%86%8D+%EC%A0%84%EC%9E%90%EC%84%AC%EC%9C%A0+%EA%B0%9C%EB%B0%9C" target="_blank">언론 보도</a></p>
+      </div>
+    </div>
+
+    <div class="media-item">
+      <div class="media-date">2024</div>
+      <div class="media-body">
+        <p class="media-title"><a href="https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=36770" target="_blank">화학적·전기적 양방향 소통이 가능한 파이버형 뇌-컴퓨터 인터페이스 개발</a></p>
+        <p class="media-outlet">KAIST 보도자료</p>
+      </div>
+    </div>
+
+    <div class="media-item">
+      <div class="media-date">2024</div>
+      <div class="media-body">
+        <p class="media-title"><a href="https://bioeng.kaist.ac.kr/index.php?document_srl=18880&mid=bio_05_04" target="_blank">학과 연구 성과 취재: 김예지, 이윤흠 박사과정 (인터뷰)</a></p>
+        <p class="media-outlet">KAIST 바이오및뇌공학과</p>
+      </div>
+    </div>
+
+    <div class="media-item">
+      <div class="media-date">2023</div>
+      <div class="media-body">
+        <p class="media-title"><a href="https://news.kaist.ac.kr/news/html/news/?mode=V&mng_no=29590" target="_blank">세탁에도 끄떡없는 섬유형 체온측정 센서 개발</a></p>
+        <p class="media-outlet">KAIST 보도자료</p>
       </div>
     </div>
   </section>
