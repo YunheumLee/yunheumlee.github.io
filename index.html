@@ -288,6 +288,27 @@
     }
     .ri-card.placeholder { border-style: dashed; }
     .ri-card.placeholder h3, .ri-card.placeholder p { color: var(--fg3); }
+    .ri-subhead {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--fg);
+      margin: 2.4rem 0 1rem;
+    }
+    .ri-closing {
+      margin-top: 1.6rem;
+      padding: 1.2rem 1.4rem;
+      border-left: 3px solid var(--accent);
+      background: #f4f7fa;
+      border-radius: 0 4px 4px 0;
+    }
+    .ri-closing p {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--fg);
+    }
     /* SKILLS */
     .skill-group { margin-bottom: 1.1rem; }
     .skill-group h3 {
@@ -378,11 +399,11 @@
         Korea Advanced Institute of Science and Technology (KAIST)
       </p>
       <p class="bio">
-        My research focuses on smart textiles and wearable electronics for biomedical and human-computer interaction applications.
-        I develop textile-based sensors and actuators that seamlessly interface with the human body,
-        aiming to advance next-generation healthcare monitoring and assistive technologies.
-        My long-term goal is to develop intelligent wearable bioelectronic systems that seamlessly integrate
-        with the human body to continuously sense, understand, and improve human health and movement.
+        I am a Ph.D. student developing wearable bioelectronics that integrate with the human body.
+        My doctoral work builds the underlying platform—high-performance fiber sensors, soft–rigid
+        interconnects, and scalable fabrication—using thermal drawing and functional composites.
+        Building on this foundation, my broader goal is to turn these technologies into tools for
+        understanding and improving human health and movement, bridging materials, AI, and rehabilitation.
       </p>
       <div class="links">
         <a href="mailto:dbsgma456@gmail.com">Email</a>
@@ -431,6 +452,7 @@
   <!-- RESEARCH INTERESTS -->
   <section id="research">
     <h2>Research Interests</h2>
+    <p class="ri-subhead">Doctoral Research — Building the Platform</p>
     <p class="ri-intro">
       My doctoral research has aimed to make imperceptible, fiber-based biomechanical electronics
       practical for real-world use by addressing three key challenges.
@@ -440,38 +462,69 @@
         <span class="ri-num">CHALLENGE 01</span>
         <h3>Advancing Fiber Fabrication Processes</h3>
         <p>
-          The first challenge lies in the limited fabrication strategies available for functional fibers.
-          To address this, I focused on advancing the thermal drawing process (TDP). I established
-          rheological criteria for the drawability of nanocomposites, and by tuning composite rheology
-          through metal–ligand engineering, I enabled the thermal drawing of liquid metal particle (LMP)
-          composites that had previously been considered infeasible.
+          Expanded the thermal drawing process (TDP) by establishing rheological criteria for nanocomposite
+          drawability, and enabled the thermal drawing of liquid metal particle (LMP) composites—previously
+          considered infeasible—through metal–ligand engineering.
         </p>
       </div>
       <div class="ri-card">
         <span class="ri-num">CHALLENGE 02</span>
         <h3>Robust Fiber–Module Interconnection</h3>
         <p>
-          The second challenge addresses device failure, which most frequently occurs at the
-          interconnection between the fiber and the back-end processing module. I tackled this through
-          two material strategies. First, I employed liquid metal particles (LMPs) to render the
-          interconnect highly strain-insensitive, preventing signal distortion on the way to the module.
-          Second, I developed a hybrid metal composite of LMPs and Field's metal particles (FMPs) that
-          integrates strong adhesion, electrical connection, strain-invariant conductivity, and leakage
-          prevention into a single material—covering all the functions required of a bioelectrode.
+          Resolved device failure at the fiber–module interface: LMPs made interconnects strain-insensitive
+          to prevent signal distortion, and an LMP–Field's metal particle (FMP) hybrid composite combined
+          adhesion, conductivity, strain-invariance, and leakage prevention in a single bioelectrode material.
         </p>
       </div>
       <div class="ri-card">
         <span class="ri-num">CHALLENGE 03</span>
         <h3>System-Level Fiber Interfaces</h3>
         <p>
-          The third challenge explores how fiber devices can be deployed at the system level. I developed
-          a range of fiber sensing devices (e.g., temperature and strain sensors), and designed them with
-          machine intelligence in mind—optimizing device characteristics so that simpler sensing setups
-          could achieve higher accuracy, while improving generalization across diverse users. Building on
-          these devices, I developed a textile interface capable of performing a variety of tasks at the
-          system level.
+          Developed fiber sensing devices (temperature, strain) designed for machine intelligence—achieving
+          higher accuracy with simpler setups and better generalization across users—and integrated them
+          into a textile interface for diverse system-level tasks.
         </p>
       </div>
+    </div>
+
+    <p class="ri-subhead">Future Vision — From Platform to Application</p>
+    <p class="ri-intro">
+      Building on this platform, my future research moves from <em>building better wearable systems</em>
+      toward <em>solving real human-health problems</em>—using the fiber-based technology I developed not
+      as a goal, but as a tool.
+    </p>
+    <div class="ri-grid">
+      <div class="ri-card">
+        <span class="ri-num">VISION 01</span>
+        <h3>Wearable Bioelectronics</h3>
+        <p>
+          Extending my doctoral platform—high-performance fiber sensors, soft–rigid interconnects, and
+          scalable manufacturing—as the core technology for body-integrated electronics.
+        </p>
+      </div>
+      <div class="ri-card">
+        <span class="ri-num">VISION 02</span>
+        <h3>AI-enabled Digital Biomarkers</h3>
+        <p>
+          Translating sensor data into meaningful health information—quantifying gait, muscle fatigue,
+          tremor, and rehabilitation progress as actionable digital biomarkers.
+        </p>
+      </div>
+      <div class="ri-card">
+        <span class="ri-num">VISION 03</span>
+        <h3>Closed-loop Rehabilitation</h3>
+        <p>
+          Closing the loop from sensing to therapy—coupling AI and soft robotics for personalized,
+          precision rehabilitation that measures, decides, and adapts in real time.
+        </p>
+      </div>
+    </div>
+
+    <div class="ri-closing">
+      <p>
+        "My long-term goal is to develop intelligent wearable bioelectronic systems that seamlessly
+        integrate with the human body to continuously sense, understand, and improve human health and movement."
+      </p>
     </div>
   </section>
 
@@ -655,8 +708,6 @@
         <span class="skill-tag">Polymer Nanocomposite Processing</span>
         <span class="skill-tag">Liquid Metal &amp; Low-Melting-Point Alloy Particle Synthesis</span>
         <span class="skill-tag">Metal-Ligand Engineering</span>
-        <span class="skill-tag">Filament Fabrication for 3D Printing</span>
-        <span class="skill-tag">Laser-Marker-Based Micropatterning</span>
       </div>
     </div>
 
@@ -665,10 +716,8 @@
       <div class="skill-tags">
         <span class="skill-tag">Morphology Analysis (SEM/TEM/AFM)</span>
         <span class="skill-tag">Mechanical Analysis (UTM)</span>
-        <span class="skill-tag">Thermal Characterization (TGA, DSC)</span>
         <span class="skill-tag">Rheological Analysis (Rheometer, DMA)</span>
         <span class="skill-tag">Electrical &amp; Electrochemical Analysis (I–V, EIS, FSCV)</span>
-        <span class="skill-tag">Adhesion Test (90°/180° Peel Test)</span>
       </div>
     </div>
 
@@ -677,7 +726,6 @@
       <div class="skill-tags">
         <span class="skill-tag">Sensor Characterization Setup (Strain/Pressure/Temperature)</span>
         <span class="skill-tag">Environmental Robustness Testing</span>
-        <span class="skill-tag">Piezoresistive Wireless Sensing Module Development</span>
         <span class="skill-tag">IMU-Based Joint Angle Reconstruction</span>
       </div>
     </div>
@@ -689,7 +737,6 @@
         <span class="skill-tag">Python</span>
         <span class="skill-tag">Machine Learning</span>
         <span class="skill-tag">Real-Time Sensor Signal Acquisition &amp; Plotting</span>
-        <span class="skill-tag">Data Logging &amp; Analysis</span>
       </div>
     </div>
   </section>
